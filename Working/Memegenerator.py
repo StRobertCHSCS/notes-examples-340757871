@@ -12,15 +12,15 @@ ar.set_background_color(ar.color.WHITE)
 ar.start_render()
 
 texture = ar.load_texture("images/Capture.PNG")
-ar.draw_texture_rectangle(texture.width//2+50, texture.height //
-                          2, texture.width,  texture.height, texture, 0)
+ar.draw_texture_rectangle(texture.width//2+50, texture.height-200
+                          , texture.width,  texture.height, texture, 0)
 
 ar.draw_text(line1, 0, height-20, ar.color.BLACK, 20)
 ar.draw_text(line2, 0, height-70, ar.color.BLACK, 20)
 
 ar.finish_render()
 ar.run()
-print(texture.width)
+
 # TODO LIST
 ''' get it prints width of image, must center the image 
 then move it to the working folder,
